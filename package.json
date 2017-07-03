@@ -16,16 +16,14 @@
     "install": "bower install",
     "start": "node src/server/app.js"
   },
-  "dependencies": {
-    "body-parser": "^1.8.2",
-    "compression": "^1.1.0",
-    "cors": "^2.2.0",
-    "express": "^4.9.3",
-    "morgan": "^1.1.1",
-    "serve-favicon": "^2.0.1"
-  },
+  "dependencies": {},
   "devDependencies": {
+    "body-parser": "^1.17.2",
+    "bower": "^1.8.0",
+    "compression": "^1.6.2",
+    "cors": "^2.8.3",
     "del": "^3.0.0",
+    "express": "^4.15.3",
     "gulp": "^3.9.1",
     "gulp-autoprefixer": "^4.0.0",
     "gulp-if": "^2.0.2",
@@ -37,6 +35,8 @@
     "gulp-util": "^3.0.8",
     "jshint": "^2.9.5",
     "jshint-stylish": "^2.2.1",
+    "morgan": "^1.8.2",
+    "serve-favicon": "^2.4.3",
     "yargs": "^8.0.2"
   }
 }

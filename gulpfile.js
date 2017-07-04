@@ -8,6 +8,10 @@ var browserSync = require('browser-sync');
 
 var $ = require('gulp-load-plugins')({lazy:true});
 
+gulp.task('preinstall', function(done){
+    $.shell.task(['bower install']);
+});
+
 gulp.task('vet', function(){
 log('Analyzing source with JShint');
 
@@ -135,7 +139,7 @@ function startBrowserSync(){
 
 function clean(path, done) {
     log('Cleaning:' + $.util.colors.blue(path));
-    del(path).then(x => done());
+    del(path).then(() => done());
 }
 
 function log(msg){
